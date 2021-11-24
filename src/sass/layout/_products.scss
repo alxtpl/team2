@@ -15,6 +15,14 @@ img {
   text-transform: uppercase;
 
   color: var(--accent-primary-color);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 .section-products__title {
   margin-bottom: 145px;
@@ -25,10 +33,29 @@ img {
   text-transform: uppercase;
 
   color: var(--accent-secondary-color);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
+}
+.products-list {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
 .products-list__item {
   margin-bottom: 130px;
   &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
@@ -41,15 +68,33 @@ img {
   &:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
+  @media screen and (min-width: 768px) {
+    padding: 152px 11px 40px 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px 44px;
+  }
 }
 .product-img-box {
   position: absolute;
   left: +50%;
-  top: -110px;
+  top: -120px;
   transform: translate(-50%);
+  @media screen and (min-width: 768px) {
+    top: -100px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -220px;
+  }
 }
 .products-img {
   min-width: 250px;
+  @media screen and (min-width: 768px) {
+    min-width: 220px;
+    @media screen and (min-width: 1280px) {
+      min-width: 335px;
+    }
+  }
 }
 .products-title {
   margin-bottom: 30px;
@@ -60,6 +105,10 @@ img {
   text-transform: uppercase;
 
   color: var(--pre-title-color);
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 .products-text {
   width: 100%;
@@ -71,6 +120,14 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--pre-title-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 .products-icon {
   position: relative;

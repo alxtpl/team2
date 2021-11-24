@@ -1,12 +1,27 @@
 <section class="section section-products">
     <div class="container">
-        <ul class="produsts-list list">
+        <p class="pretitle-products__text title">100% natural</p>
+        <h2 class="title section-products__title">products</h2>
+        <ul class="products-list list">
             <li class="products-list__item item">
-                <p class="pretitle-products__text title">100% natural</p>
-                <h2 class="title section-products__title">products</h2>
+                
                 <div class="products-container">
                     <div class="product-img-box">
-                        <img src="./images/home-pic/home-pic1-mobile-1x.png" alt="ice-cream" class="products-img">
+                        <picture>
+                            <source 
+                            srcset="./images/home-pic/home-pic1-1x.png 1x, 
+                                    ./images/home-pic/home-pic1-2x.png 2x" 
+                            media="(min-width: 1280px"/>
+                            <source 
+                            srcset="./images/home-pic/home-pic1-tablet-1x.png 1x, 
+                                    ./images/home-pic/home-pic1-tablet-2x.png 2x"
+                            media="(min-width: 768px" />
+                            <source 
+                            srcset="./images/home-pic/home-pic1-mobile-1x.png 1x, 
+                                    ./images/home-pic/home-pic1-mobile-2x.png 2x" 
+                            media="(min-width: 480px" />
+                            <img src="./images/home-pic/home-pic1-mobile-1x.png" alt="ice-cream" class="products-img">
+                        </picture>
                     </div>
                     <h3 class="products-title title">ice cream</h3>
                     <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -19,7 +34,7 @@
             <li class="products-list__item item">
                 <div class="products-container products-container-brown">
                     <div class="product-img-box">
-                        <img src="./images/home-pic/home-pic2-mobile-1x.png" alt="ice-cream" class="products-img">
+                        <img src="./images/home-pic/home-pic2-mobile-1x.png" alt="ice-coffee" class="products-img">
                     </div>
                     <h3 class="products-title title">ice cream</h3>
                     <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -33,7 +48,7 @@
             <li class="products-list__item item">
                 <div class="products-container products-container-green">
                     <div class="product-img-box">
-                        <img src="./images/home-pic/home-pic3-mobile-1x.png" alt="ice-cream" class="products-img">
+                        <img src="./images/home-pic/home-pic3-mobile-1x.png" alt="milkshakes" class="products-img">
                     </div>
                     <h3 class="products-title title">ice cream</h3>
                     <p class="products-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
