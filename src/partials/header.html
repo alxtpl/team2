@@ -1,18 +1,21 @@
 <header>
   <div class="container">
-    <a href="./index.html" class="logo">
-      <img
-        srcset="./images/logo-1x.png 200w, ./images/logo-2x.png 740w"
-        sizes="(min-width: 1200px)200px, (min-width: 768px) 200px, (min-width: 480px) 200px, 100vw"
-        src="./images/logo-2x.png"
-        alt="logo"
-      />
-    </a>
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="icon-open">
-        <use href="./images/sprite.svg#icon-Burger1"></use>
-      </svg>
-    </button>
+    <div class="logo-div">
+      <a href="./index.html" class="logo">
+        <img
+          srcset="./images/logo-1x.png 200w, ./images/logo-2x.png 740w"
+          sizes="(min-width: 1200px)200px, (min-width: 768px) 200px, (min-width: 480px) 200px, 100vw"
+          src="./images/logo-2x.png"
+          alt="logo"
+        />
+      </a>
+      <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-open">
+          <use href="./images/sprite.svg#icon-Burger1"></use>
+        </svg>
+      </button>
+      <button class="header-btn" type="button">Buy now <span class="menu-span">></span></button>
+    </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="icon-close">

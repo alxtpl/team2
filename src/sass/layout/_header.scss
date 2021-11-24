@@ -1,3 +1,10 @@
+.logo-div {
+  display: flex;
+  align-content: center;
+  background-color: var(--accent-primary-color);
+  justify-content: space-between;
+  padding-top: 6px;
+}
 .icon-open {
   width: 20px;
   height: 12px;
@@ -15,13 +22,9 @@
 }
 .menu-toggle {
   margin-left: auto;
-  right: 28px;
-  top: 23px;
+  margin-right: 28px;
   border: none;
   background-color: transparent;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 .menu-container {
   position: fixed;
@@ -53,6 +56,10 @@
   font-size: 16px;
   line-height: 21px;
   margin-bottom: 19px;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
 }
 .menu-item {
   padding-top: 13px;
@@ -61,5 +68,28 @@
   border: 1px solid #e18298;
 }
 .menu-span {
+  align-items: center;
   margin-left: 15px;
+}
+.menu-open {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  fill: var(--accent-secondary-color);
+}
+.header-btn {
+  width: 209px;
+  height: 44px;
+  margin-left: 30px;
+  color: var(--accent-secondary-color);
+  background-color: var(--pre-title-color);
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 19px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
