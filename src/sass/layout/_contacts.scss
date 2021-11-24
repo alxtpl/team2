@@ -1,0 +1,95 @@
+.contacts-section {
+  padding-top: 86px;
+  padding-bottom: 113px;
+  background-image: linear-gradient(to bottom, #ffff 10%, #fff5f6 10%);
+}
+.contacts-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.contacts-list {
+  margin-bottom: 54px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+.contacts-list__item {
+  padding: 43px 20px 43px 20px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.contacts-list__title {
+  margin-bottom: 25px;
+  width: 80px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.contacts-list__title-green {
+  background-color: #c2e297;
+  width: 130px;
+}
+.contacts-list__city {
+  margin-bottom: 10px;
+
+  color: #000000;
+}
+.conacts-list__texx {
+  line-height: calc(18 / 12);
+
+  color: #907e82;
+}
+.contacts-list__list {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+.contacts-item__work {
+  margin-bottom: 10px;
+}
+.contacts-list__days {
+  color: #000000;
+}
+.contacts-list__hours {
+  color: #ffa5ba;
+}
+.contacts-list__link {
+  line-height: 1.5;
+
+  color: #907e82;
+}
+.contacts-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  width: 160px;
+  height: 44px;
+  background-color: #d41443;
+  color: #ffffff;
+  border-radius: 22px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+}
+.contacts-btn.contacts-btn-second {
+  background-color: #ffffff;
+  color: #d41443;
+}
