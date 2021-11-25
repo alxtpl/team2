@@ -1,0 +1,49 @@
+.hero {
+  background-color: var(--accent-bg-color);
+
+  z-index: 1;
+  height: 446px;
+}
+
+.hero-container {
+  position: relative;
+}
+.hero-tittle {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pre-title-color);
+  max-width: 218px;
+  margin-bottom: 19px;
+}
+.tittle-span {
+  color: var(--accent-secondary-color);
+  font-size: 48px;
+}
+.hero-text {
+  position: absolute;
+  z-index: 5;
+}
+.hero-container {
+  padding-top: 193px;
+  padding-bottom: 160px;
+}
+.hero-btn-1 {
+  color: var(--pre-title-color);
+  background-color: var(--accent-secondary-color);
+  margin-right: 8px;
+}
+.hero-btn-2 {
+  color: var(--accent-secondary-color);
+  background-color: var(--pre-title-color);
+}
+.hero-icecream {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 32px;
+}
