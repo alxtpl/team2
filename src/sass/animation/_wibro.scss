@@ -1,0 +1,108 @@
+.wibro {
+    // display: block;
+    // position: relative;
+    // width: 18px;
+    // height: 41px;
+    // background: url(tel.png) no-repeat 0 0;
+    &:hover {
+        -webkit-animation: 0.1s tremor ease-out infinite;
+        animation: 0.1s tremor ease-out infinite;
+    }
+}
+
+// ===============================================================
+a,
+button {
+    // display: block;
+    // position: relative;
+    // width: 18px;
+    // height: 41px;
+    // background: url(tel.png) no-repeat 0 0;
+    &:hover {
+        -webkit-animation: 0.1s tremor ease-out infinite;
+        animation: 0.1s tremor ease-out infinite;
+    }
+}
+
+:root {
+    --tremorplus: 2%;
+    --tremorminus: -2%;
+}
+
+// ========================================================================
+@-webkit-keyframes tremor {
+    0%,
+    25% {
+        left: -1px;
+        top: -1px;
+        -webkit-transform: translateX(var(--tremorminus));
+        transform: translateX(var(--tremorminus));
+    }
+    50%,
+    100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(var(--tremorplus));
+        transform: translateX(var(--tremorplus));
+    }
+}
+
+@-moz-keyframes tremor {
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(var(--tremorminus));
+        transform: translateX(var(--tremorminus));
+    }
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(var(--tremorplus));
+        transform: translateX(var(--tremorplus));
+    }
+}
+
+@-ms-keyframes tremor {
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(var(--tremorminus));
+        transform: translateX(var(--tremorminus));
+    }
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(var(--tremorplus));
+        transform: translateX(var(--tremorplus));
+    }
+}
+
+@-o-keyframes tremor {
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(var(--tremorminus));
+        transform: translateX(var(--tremorminus));
+    }
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(var(--tremorplus));
+        transform: translateX(var(--tremorplus));
+    }
+}
+
+@keyframes tremor {
+    0%,
+    25% {
+        left: -1px;
+        -webkit-transform: translateX(var(--tremorminus));
+        transform: translateX(var(--tremorminus));
+    }
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(var(--tremorplus));
+        transform: translateX(var(--tremorplus));
+    }
+}
