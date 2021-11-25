@@ -31,6 +31,8 @@
   }
 }
 .contacts-list {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 54px;
   font-weight: 500;
   font-size: 12px;
