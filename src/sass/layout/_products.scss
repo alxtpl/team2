@@ -422,6 +422,7 @@ img {
   }
 }
 .products-label {
+  position: relative;
   padding: 0;
   display: block;
   margin: 0 auto;
@@ -453,4 +454,17 @@ img {
   .contacts-input:checked + .products-hidden-text {
     display: none;
   }
+}
+.products-label::after {
+  background-image: url('../images/arrow-right.svg');
+  content: '';
+  stroke: red;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

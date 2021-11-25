@@ -141,6 +141,7 @@
 .contacts-btn {
   display: block;
   padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
   margin-bottom: 10px;
   &:last-child {
@@ -174,6 +175,7 @@
   }
 }
 .contacts-btn.contacts-btn-second {
+  padding: 0 30px;
   background-color: #ffffff;
   color: #d41443;
   @media screen and (min-width: 768px) {
@@ -184,8 +186,46 @@
     margin-right: 15px;
     width: 180px;
   }
+  position: relative;
 }
 .contacts-button-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+// .contacts-btn-second::after {
+//   background-image: url('../images/arrow-btn.svg');
+//   content: '';
+//   stroke: red;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   width: 8px;
+//   height: 10px;
+//   position: absolute;
+//   left: 125px;
+//   top: 50%;
+//   transform: translate(-50%);
+// }
+.contacts-btn-first {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-btn-icon {
+  stroke: var(--pre-title-color);
+}
+.contacts-button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  margin-right: 4px;
+}
+.contacts-btn-icon-second {
+  stroke: var(--accent-secondary-color);
+}
+.contacts-btn-second {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
