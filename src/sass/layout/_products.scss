@@ -421,3 +421,36 @@ img {
     }
   }
 }
+.products-label {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--pre-title-color);
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+}
+.products-hidden-text {
+  display: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+.products-list__item:hover,
+.products-list__item:focus {
+  .contacts-input:checked + .products-hidden-text {
+    display: block;
+  }
+}
+.products-list__item {
+  .contacts-input:checked + .products-hidden-text {
+    display: none;
+  }
+}
