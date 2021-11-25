@@ -33,13 +33,34 @@
   padding-bottom: 160px;
 }
 .hero-btn-1 {
+  width: 62px;
+  height: 24px;
   color: var(--pre-title-color);
   background-color: var(--accent-secondary-color);
   margin-right: 8px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  @media screen and (min-width: 1280px) {
+    width: 102px;
+    height: 40px;
+    margin-right: 15px;
+  }
 }
 .hero-btn-2 {
+  width: 83px;
+  height: 24px;
   color: var(--accent-secondary-color);
   background-color: var(--pre-title-color);
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  @media screen and (min-width: 1280px) {
+    width: 132px;
+    height: 40px;
+  }
 }
 .hero-icecream {
   position: absolute;
