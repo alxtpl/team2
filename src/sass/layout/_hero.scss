@@ -1,5 +1,8 @@
 .hero {
-  background-color: var(--accent-primary-color);
+  background-color: var(--accent-bg-color);
+
+  z-index: 1;
+  height: 446px;
 }
 
 .hero-container {
@@ -21,6 +24,10 @@
   color: var(--accent-secondary-color);
   font-size: 48px;
 }
+.hero-text {
+  position: absolute;
+  z-index: 5;
+}
 .hero-container {
   padding-top: 193px;
   padding-bottom: 160px;
@@ -33,4 +40,10 @@
 .hero-btn-2 {
   color: var(--accent-secondary-color);
   background-color: var(--pre-title-color);
+}
+.hero-icecream {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 32px;
 }

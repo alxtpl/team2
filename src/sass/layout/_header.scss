@@ -1,6 +1,5 @@
 .header {
-  position: fixed;
-  background-color: transparent;
+  background-color: var(--accent-primary-color);
 }
 .logo-div {
   display: flex;
@@ -30,6 +29,7 @@
   background-color: transparent;
 }
 .menu-container {
+  z-index: 90;
   position: fixed;
   display: flex;
   flex-direction: column;
