@@ -1,6 +1,6 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   @media screen and (max-width: 767px) {
     gap: 2px;
   }
@@ -19,6 +19,7 @@ img {
 .gallery {
   &__image {
     border-radius: 10%;
+
     // scale: 1;
     border-radius: 20px;
     animation-name: scale;
@@ -34,13 +35,21 @@ img {
   &__section {
     @media screen and (max-width: 767px) {
       width: 100%;
+      background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
       width: 740px;
+      background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     @media screen and (min-width: 1280px) {
       width: 100vw;
-      height: 438px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      // height: 100%;
       background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
     }
   }
