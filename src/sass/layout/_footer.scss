@@ -82,6 +82,13 @@ br {
   height: 32px;
   background-color: var(--accent-primary-color);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-secondary-color);
+  }
 }
 
 .social-icon {
