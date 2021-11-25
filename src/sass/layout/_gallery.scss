@@ -1,20 +1,46 @@
 .list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
+  @media screen and (max-width: 767px) {
+    gap: 2px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 12px;
+  }
 }
 
-.image {
-  border-radius: 50%;
+img {
+  width: 100%;
+  border-radius: 10%;
 }
 .gallery {
+  &__image {
+    border-radius: 10%;
+    // scale: 1;
+    border-radius: 20px;
+    animation-name: scale;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:active {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
   &__section {
-    @media screen and (min-width: 1200px) {
-      //   background-color: tomato;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 740px;
+    }
+    @media screen and (min-width: 1280px) {
       width: 100vw;
-      //   max-width: 1600px;
       height: 438px;
-      // padding: 200px 402px;
       background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
     }
   }
@@ -77,5 +103,13 @@
     grid-row-end: 7;
     grid-column-start: 7;
     grid-column-end: 8;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.45);
+  }
+  100% {
+    transform: scale(1);
   }
 }
