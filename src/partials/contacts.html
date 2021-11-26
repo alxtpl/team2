@@ -81,7 +81,7 @@
                 </li>
             </ul>
             <div class="contacts-button-box">
-            <button class="contacts-btn contacts-btn-first"><p class="contacts-button-text">Our Locations</p>
+            <button class="contacts-btn contacts-btn-first" data-location-modal-open><p class="contacts-button-text">Our Locations</p>
             <svg class="contacts-btn-icon" width="15px" height="12px">
                 <use href="./images/sprite.svg#icon-arrow-btn"></use>
             </svg>
@@ -93,4 +93,17 @@
             </svg></button>
             </div>
     </div>
+    <div class="location-backdrop is-hidden" data-location-modal id="location">
+        <div class="location-modal">
+            <p class="location-modal__title">Location</p>
+            <button class="location-modal__btn-close" data-location-modal-close><svg class="location-modal__icon"
+                    width="15px" height="12px">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg></button>
+            <div class="location-modal__map-box"> <iframe class="location-modal__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.651839447461!2d30.51983701573132!3d50.44758537947498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1637924976565!5m2!1sru!2sua"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>
+        </div>
+    </div>
+    <script src="./js/location.js"></script>
 </section>
