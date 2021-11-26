@@ -1,3 +1,7 @@
+// ============================================================================
+
+// ==============================================================================
+
 .hero {
   // border-top: 1px solid var(--accent-bg-color);
   background-color: var(--accent-bg-color);
@@ -9,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--pre-title-color);
@@ -42,6 +46,7 @@
     letter-spacing: 0.04em;
   }
 }
+
 .hero-text {
   top: 193px;
   left: 20px;
@@ -51,7 +56,16 @@
     top: 102px;
     left: 34px;
   }
+  // ===============================================
+  @media screen and (min-width: 1280px) {
+    
+    top: 171px;
+    left: 19px;
+
+  }
+  // =======================================================
 }
+
 .hero-container {
   position: relative;
   height: 502px;
@@ -62,6 +76,7 @@
     height: 665px;
   }
 }
+
 .hero-btn-1 {
   width: 62px;
   height: 24px;
@@ -110,29 +125,34 @@
   }
   @media screen and (min-width: 1280px) {
     top: 108px;
-    left: 537px;
+    left: 500px;
     height: 557px;
     width: 236px;
   }
 }
 .hero-ellipse {
-  position: absolute;
-  z-index: 2;
+   position: absolute;
+   z-index: 2;
+  
+  // ===========================================
+@media screen and (max-width: 767px) {
   top: 83px;
   right: 0;
-  height: 344px;
+   height: 344px;
   width: auto;
+  }
+// ==========================================
   @media screen and (min-width: 768px) {
-    height: 322px;
+     height: 322px;
     width: auto;
     top: 39px;
     left: 297px;
   }
   @media screen and (min-width: 1280px) {
     top: 52px;
-    left: 420px;
-    height: 538px;
-    width: 538px;
+    left: 380px;
+     height: 538px;
+     width: 538px;
   }
 }
 .hero-milk {
