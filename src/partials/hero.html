@@ -1,79 +1,74 @@
-<section class="hero">
-  <div class="container hero-container">
-    <div class="hero-text">
-      <h1 class="hero-tittle">ice cream made with <span class="tittle-span">passion</span></h1>
-      <div class="hero-btn">
-        <button type="button" class="btn hero-btn-1">Products</button>
-        <button type="button" class="btn hero-btn-2">How it’s made?</button>
-      </div>
-    </div>
-    <div class="">
-      <img
+<section class="hero" id="home">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1 class="hero-tittle">ice cream made with <span class="tittle-span">passion</span></h1>
+            <div class="hero-btn">
+                <button type="button" class="btn hero-btn-1">Products</button>
+                <button type="button" class="btn hero-btn-2">How it’s made?</button>
+            </div>
+        </div>
+        <div class="">
+            <!-- <img
         class="hero-ellipse"
         srcset="
-          ./images/Ellipse3-tablet-1x.png 324w,
-          ./images/Ellipse3-mobile-1x.png 346w,
-          ./images/Ellipse3-tablet-2x.png 648w,
-          ./images/Ellipse3-mobile-2x.png 692w
+         ./images/Ellipse3-mobile-1x.png 284w,  
+         ./images/Ellipse3-tablet-1x.png 324w,
+         ./images/Ellipse3-1x.png 538w,
+         ./images/Ellipse3-mobile-2x.png 568w,
+         ./images/Ellipse3-tablet-2x.png 648w,
+         ./images/Ellipse3-2x.png 1076w
+          
         "
-        sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 320px) 346px, 100vw"
+        sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 320px) 284px, 100vw"
+        src="./images/Ellipse3-mobile-2x.png"
         alt="backgroud-accent"
-      />
-      <img
-        class="hero-icecream"
-        srcset="
+      /> -->
+            <!-- ========================================================================= -->
+
+            <picture class="hero-ellipse">
+                <source srcset="./images/Ellipse3-1x.png 1x, ./images/Ellipse3-2x.png 2x" media="(min-width: 1280px)" />
+                <source srcset="./images/Ellipse3-tablet-1x.png 1x, ./images/Ellipse3-tablet-2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./images/Ellipse3-mobile-1x.png 1x, ./images/Ellipse3-mobile-2x.png 2x" media="(min-width: 320px)" />
+                <img src="./images/Ellipse3-1x.png" alt="" />
+            </picture>
+            <!-- ======================================================================================== -->
+
+            <img class="hero-icecream" srcset="
           ./images/slider-pic/slider-pic7-tablet-1x.png 143w,
           ./images/slider-pic/slider-pic7-mobile-1x.png 171w,
           ./images/slider-pic/slider-pic7-1x.png        236w,
           ./images/slider-pic/slider-pic7-tablet-2x.png 286w,
           ./images/slider-pic/slider-pic7-mobile-2x.png 324w,
           ./images/slider-pic/slider-pic7-2x.png        472w
-        "
-        sizes="(min-width: 1280px) 236px,(min-width: 768px) 143px, (min-width: 320px) 171px, 100vw"
-        src="./images/slider-pic/slider-pic7-mobile-2x.png"
-        alt="ice-cream"
-      />
-      <img
-        class="hero-milk"
-        srcset="
+        " sizes="(min-width: 1280px) 236px,(min-width: 768px) 143px, (min-width: 320px) 171px, 100vw" src="./images/slider-pic/slider-pic7-mobile-2x.png" alt="ice-cream" />
+            <img class="hero-milk" srcset="
           ./images/slider-pic/slider-pic5-tablet-1x.png 124w,
           ./images/slider-pic/slider-pic5-tablet-2x.png 248w
-        "
-        sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 320px) 346px, 100vw"
-        src="./images/slider-pic/slider-pic5-tablet-2x.png"
-        alt="bottle of milk"
-      />
-    </div>
-    <ul class="hero-list">
-      <li class="hero-item">
-        <p class="hero-number">16</p>
-        <p class="hero-text-right">cafes</p>
-      </li>
-      <li class="hero-item">
-        <p class="hero-number">23</p>
-        <p class="hero-text-right">food trucks</p>
-      </li>
-    </ul>
-    <img
-      class="hero-woman"
-      srcset="
+        " sizes="(min-width: 1280px) 538px, (min-width: 768px) 324px, (min-width: 320px) 346px, 100vw" src="./images/slider-pic/slider-pic5-tablet-2x.png" alt="bottle of milk" />
+        </div>
+        <ul class="hero-list">
+            <li class="hero-item">
+                <p class="hero-number">16</p>
+                <p class="hero-text-right">cafes</p>
+            </li>
+            <li class="hero-item">
+                <p class="hero-number">23</p>
+                <p class="hero-text-right">food trucks</p>
+            </li>
+        </ul>
+        <img class="hero-woman" srcset="
         ./images/slider-pic/slider-pic4-1x.png 168w,
         ./images/slider-pic/slider-pic4-2x.png 336w
-      "
-      sizes="(min-width: 1280px) 293px, (min-width: 768px) 168px, 100vw"
-      src="./images/slider-pic/slider-pic4-2x.png"
-      alt="woman with icecream"
-    />
-    <div class="hero-text-and-btn">
-      <p class="hero-lorem">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button type="button" class="hero-btn-3">
+      " sizes="(min-width: 1280px) 293px, (min-width: 768px) 168px, 100vw" src="./images/slider-pic/slider-pic4-2x.png" alt="woman with icecream" />
+        <div class="hero-text-and-btn">
+            <p class="hero-lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+            <button type="button" class="hero-btn-3">
         <svg class="hero-icon">
           <use href="./images/sprite.svg#icon-arrow-btn"></use>
         </svg>
       </button>
+        </div>
     </div>
-  </div>
 </section>
