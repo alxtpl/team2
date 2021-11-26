@@ -93,6 +93,12 @@
   align-items: center;
   margin-left: 15px;
 }
+.menu-icon {
+  align-items: center;
+  width: 6px;
+  height: 12px;
+  stroke: var(--accent-secondary-color);
+}
 .menu-open {
   margin-left: auto;
   background-color: transparent;
@@ -106,6 +112,9 @@
   // }
 }
 .header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--accent-secondary-color);
   background-color: var(--pre-title-color);
   @media screen and (max-width: 767px) {
