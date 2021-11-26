@@ -141,6 +141,10 @@
     margin-right: 0;
     font-size: 16px;
     line-height: 1.3;
+    &:hover,
+    &:focus {
+      background-color: var(--button-bg-hover);
+    }
   }
 }
 .about-btn-icon {
