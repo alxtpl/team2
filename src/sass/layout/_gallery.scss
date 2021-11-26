@@ -34,13 +34,13 @@ img {
   }
   &__section {
     @media screen and (max-width: 767px) {
-      width: 100%;
+      width: 100vw;
       background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
       padding-top: 20px;
       padding-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
-      width: 740px;
+      width: 100vw;
       background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
       padding-top: 20px;
       padding-bottom: 20px;
