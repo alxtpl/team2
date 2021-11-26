@@ -1,10 +1,26 @@
 .customer-reviews__section {
-  padding-top: 70px;
+  @media screen and (max-width: 739px) {
+    padding-top: 30px;
+  }
+  @media screen and (max-width: 1279px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 70px;
+  }
 }
 
 .swiper {
   width: 100%;
-  height: 350px;
+  @media screen and (max-width: 739px) {
+    height: 590px;
+  }
+  @media screen and (max-width: 1279px) {
+    height: 490px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 420px;
+  }
 }
 
 .swiper-slide {
@@ -42,11 +58,17 @@
 }
 
 .customer-reviews__text {
-  width: 88%;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  width: 100%;
+  @media screen and (max-width: 739) {
+    width: 100%;
+  }
+  @media screen and (min-width: 740) {
+    width: 88%;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -74,4 +96,93 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.slider-text-wrapper {
+  background-color: #fff5f6;
+  padding: 0 50px 16px;
+  border-radius: 20px;
+  &::before {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/kav.png');
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      width: 50px;
+      height: 50px;
+      background-image: url('../images/kav-2x.png');
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
+  }
+}
+
+.slider-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  padding: 0 18px;
+  background-image: repeating-linear-gradient(to top, #ffb8ca 0px 1px, transparent 1px 31px);
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+
+  .slider {
+    width: 620px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slider-text-wrapper {
+    padding: 47px 60px 27px;
+  }
+
+  .slider-text {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1090px;
+  }
+
+  .slider {
+    width: 926px;
+  }
+
+  .slider-text {
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 0 4px;
+  }
+}
+
+.ice {
+  margin-bottom: 15px;
 }
