@@ -1,33 +1,38 @@
 <header class="header">
-    <div class="container header-container">
-        <a href="./index.html" class="logo">
-            <img srcset="./images/logo-1x.png 200w, ./images/logo-2x.png 740w" sizes="200px" src="./images/logo-2x.png" alt="logo" />
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <img
+        srcset="./images/logo-1x.png 200w, ./images/logo-2x.png 740w"
+        sizes="200px"
+        src="./images/logo-2x.png"
+        alt="logo"
+      />
 
-            <!-- ============================================================================= -->
-            <!-- 
+      <!-- ============================================================================= -->
+      <!-- 
             <picture class="hero-ellipse">
                 <source srcset="./images/Ellipse3-1x.png 1x, ./images/Ellipse3-2x.png 2x" media="(min-width: 1280px)" />
                 <source srcset="./images/Ellipse3-tablet-1x.png 1x, ./images/Ellipse3-tablet-2x.png 2x" media="(min-width: 768px)" />
                 <source srcset="./images/Ellipse3-mobile-1x.png 1x, ./images/Ellipse3-mobile-2x.png 2x" media="(min-width: 320px)" />
                 <img src="./images/Ellipse3-1x.png" alt="" />
             </picture> -->
-            <!-- ============================================================================= -->
-        </a>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
-                <li class="nav-item"><a href="#howitsmade" class="nav-link">How it’s made?</a></li>
-                <li class="nav-item"><a href="#ourprod" class="nav-link">Our products</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <!-- ============================================================================= -->
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+        <li class="nav-item"><a href="#howitsmade" class="nav-link">How it’s made?</a></li>
+        <li class="nav-item"><a href="#ourprod" class="nav-link">Our products</a></li>
+        <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="icon-open">
         <use href="./images/sprite.svg#icon-Burger1"></use>
       </svg>
     </button>
-        <button class="btn header-btn" type="button">
+    <button data-modal-open class="btn header-btn" type="button">
       <span>Buy now</span>
       <span class="menu-span">
         <svg class="menu-icon">
@@ -35,20 +40,58 @@
         </svg>
       </span>
     </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close-btn">
+          <svg class="close-btn-icon">
+            <use href="./images/sprite.svg#icon-Vector-7"></use>
+          </svg>
+        </button>
+        <p class="modal-tittle">Leave your contacts.We'll contact you!</p>
+        <form class="modal-form">
+          <label class="modal-label"
+            >Name
+            <input type="text" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/sprite.svg#icon-user"></use>
+            </svg>
+          </label>
+
+          <label class="modal-label"
+            >Mobile
+            <input type="tel" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/sprite.svg#icon-mail"></use></svg></label>
+
+          <label class="modal-label"
+            >E-mail
+            <input type="email" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/sprite.svg#icon-Vector-9"></use>
+            </svg>
+          </label>
+          <label class="modal-label"
+            >Your's order
+            <textarea class="modal-text" placeholder="Type your's order"></textarea>
+          </label>
+        </form>
+        <button class="btn submit-btn" type="submit">Send</button>
+      </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
         <svg class="icon-close">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-            <button class="menu-btn btn" type="button">Buy now <span class="menu-span">></span></button>
-            <ul class="menu-list">
-                <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-                <li class="menu-item"><a href="" class="menu-link">About us</a></li>
-                <li class="menu-item"><a href="" class="menu-link">How it’s made?</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Our products</a></li>
-                <li class="menu-item"><a href="" class="menu-link">Contact</a></li>
-            </ul>
-        </div>
+      <button class="menu-btn btn" type="button">Buy now <span class="menu-span">></span></button>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+        <li class="menu-item"><a href="" class="menu-link">About us</a></li>
+        <li class="menu-item"><a href="" class="menu-link">How it’s made?</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Our products</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </header>
