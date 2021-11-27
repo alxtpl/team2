@@ -1,5 +1,12 @@
+const accentbgcolor = rgba(255, 184, 201, 1);
+accentbgcolorlight = rgba(255, 184, 201, .7);
+accentbgcolormedium = rgba(255, 184, 201, .85);
+accentprimarybgcolor  = rgba(255, 165, 186, 1);
+accentprimarybgcolorlight = rgba(255, 165, 186, .7);
+accentprimarybgcolormedium = rgba(255, 165, 186, .85);
 var colors = new Array(
-    [255, 184, 202], [255, 132, 167], [232, 147, 49], [158, 185, 147], [252, 148, 48], [229, 203, 95],
+    accentbgcolor, accentbgcolormedium, accentbgcolorlight, accentbgcolormedium, accentbgcolor, 
+    accentprimarycolor,accentprimarycolormedium, accentprimarycolorlight,accentprimarycolormedium,accentprimarycolor,
 );
 
 var step = 0;
