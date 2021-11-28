@@ -108,14 +108,15 @@
         ></span>
       </button>
 
-      <button class="contacts-btn contacts-btn-second">
+      <button class="contacts-btn contacts-btn-second" data-franshize-open>
         <span class="contacts-button-text">Franchise</span>
         <span
           ><svg class="contacts-btn-icon-second" width="6px" height="10px">
-            <use href="./images/sprite.svg#icon-arrow-btn"></use></svg
+            <use href="./images/sprite.svg#icon-arrow-btn"></use></svg></span>
       </button>
     </div>
   </div>
+</section>
   <div class="location-backdrop is-hidden" data-location-modal id="location">
     <div class="location-modal">
       <p class="location-modal__title">Location</p>
@@ -137,5 +138,40 @@
       </div>
     </div>
   </div>
+  <div data-franshize class="franshize-backdrop is-hidden" id="franshize">
+    <div class="modal-franshize">
+      <button data-franshize-close class="close-btn">
+        <svg class="close-btn-icon">
+          <use href="./images/sprite.svg#icon-Vector-7"></use>
+        </svg>
+      </button>
+      <p class="modal-tittle">Leave your contacts.We'll contact you!</p>
+      <form class="modal-form">
+        <label class="modal-label">Name
+          <input type="text" class="modal-input" />
+          <svg class="modal-input-icon">
+            <use href="./images/sprite.svg#icon-user"></use>
+          </svg>
+        </label>
+  
+        <label class="modal-label">Mobile
+          <input type="tel" class="modal-input" />
+          <svg class="modal-input-icon">
+            <use href="./images/sprite.svg#icon-mail"></use>
+          </svg></label>
+  
+        <label class="modal-label">E-mail
+          <input type="email" class="modal-input" />
+          <svg class="modal-input-icon">
+            <use href="./images/sprite.svg#icon-Vector-9"></use>
+          </svg>
+        </label>
+        <label class="modal-label">Comment
+          <textarea class="modal-text" placeholder="Leave your comment here"></textarea>
+        </label>
+      </form>
+      <button class="btn submit-btn" type="submit">Send</button>
+    </div>
+  </div>
   <script src="./js/location.js"></script>
-</section>
+  <script src="./js/franshize.js"></script>
