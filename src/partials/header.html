@@ -3,18 +3,6 @@
     <div class="container header-container">
         <a href="./index.html" class="logo wow animate__fadeInBottomRight">
             <img srcset="./images/logo-1x.png 200w, ./images/logo-2x.png 740w" sizes="200px" src="./images/logo-2x.png" alt="logo" />
-
-
-      <!-- ============================================================================= -->
-      <!-- 
-            <picture class="hero-ellipse">
-                <source srcset="./images/Ellipse3-1x.png 1x, ./images/Ellipse3-2x.png 2x" media="(min-width: 1280px)" />
-                <source srcset="./images/Ellipse3-tablet-1x.png 1x, ./images/Ellipse3-tablet-2x.png 2x" media="(min-width: 768px)" />
-                <source srcset="./images/Ellipse3-mobile-1x.png 1x, ./images/Ellipse3-mobile-2x.png 2x" media="(min-width: 320px)" />
-                <img src="./images/Ellipse3-1x.png" alt="" />
-            </picture> -->
-
-            <!-- ============================================================================= -->
         </a>
         <nav>
             <ul class="nav-list wow animate__flipInY">
@@ -85,13 +73,15 @@
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="menu-btn btn" type="button">Buy now <span class="menu-span">></span></button>
+      <button data-modal-open class="menu-btn btn" type="button">Buy now <span class="menu-span"><svg class="menu-icon">
+          <use href="./images/sprite.svg#icon-arrow-btn"></use>
+        </svg></span></button>
       <ul class="menu-list">
-        <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-        <li class="menu-item"><a href="" class="menu-link">About us</a></li>
-        <li class="menu-item"><a href="" class="menu-link">How it’s made?</a></li>
-        <li class="menu-item"><a href="" class="menu-link">Our products</a></li>
-        <li class="menu-item"><a href="" class="menu-link">Contact</a></li>
+        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+        <li class="menu-item"><a href="#aboutus" class="menu-link">About us</a></li>
+        <li class="menu-item"><a href="#howitsmade" class="menu-link">How it’s made?</a></li>
+        <li class="menu-item"><a href="#ourprod" class="menu-link">Our products</a></li>
+        <li class="menu-item"><a href="#contacts" class="menu-link">Contact</a></li>
       </ul>
     </div>
   </div>
