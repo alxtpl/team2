@@ -1,0 +1,39 @@
+.franshize-backdrop {
+  padding: 0 10px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background: #fff5f6;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+  &.is-hidden {
+    .location-modal {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+}
+.modal-franshize {
+  padding: 40px;
+  max-width: 528px;
+  height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffb8ca;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    width: 528px;
+  }
+}
