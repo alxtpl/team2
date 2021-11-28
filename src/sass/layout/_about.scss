@@ -168,3 +168,124 @@
     margin-left: 74px;
   }
 }
+//
+
+//
+.about-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-about {
+  padding: 40px 20px;
+  width: calc(100% - 20px);
+  height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fadfe5;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(../images/section-about-bg-mob1x-min.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 200px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 900px;
+    background-image: none;
+  }
+}
+.about-close-btn-icon {
+  width: 11px;
+  height: 11px;
+  fill: #d41443;
+  &:hover {
+    fill: #e17992;
+  }
+}
+.modal-button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.about-modal-title {
+  margin-bottom: 30px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-secondary-color);
+}
+.about-modal-text {
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+  }
+}
+.about-text-aftertitle {
+  // margin-bottom: 30px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-secondary-color);
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 480px) {
+  }
+}
+.about-modal-text-two {
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: inline;
+    margin-top: 30px;
+  }
+}
+.about-modal-text-tree {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-top: 30px;
+  }
+}
+.about-modal-text-four {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: inline;
+    margin-top: 30px;
+  }
+}
