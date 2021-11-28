@@ -1,0 +1,16 @@
+.nav-link,
+.header-btn span,
+.hero-btn .btn,
+.logo img,
+.hero-item,
+.about-button,
+.footer-list li,
+.advantages-numbers {
+    &:hover,
+     :focus {
+        display: inline-block;
+        // margin: 0 0.5rem;
+        animation: swing;
+        animation-duration: 2s;
+    }
+}

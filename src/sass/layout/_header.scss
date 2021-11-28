@@ -132,7 +132,6 @@
     @media screen and (min-width: 1280px) {
         display: none;
     }
-    
 }
 
 .header-btn {
@@ -150,7 +149,7 @@
         height: 44px;
     }
     &:hover,
-    &:focus{
+    &:focus {
         background-color: var(--button-bg-hover);
     }
 }
@@ -177,10 +176,6 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
      :focus {
-        display: inline-block;
-        margin: 0 0.5rem;
-        animation: swing;
-        animation-duration: 2s;
         color: var(--accent-secondary-color);
     }
 }
